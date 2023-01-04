@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.chapter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.main {
+  width: 95vw;
+  border-radius: 5px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.main-header{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  margin: 10px 0px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  transition: all 150ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.main-header > div {
+  display: flex;
+  width: 50%;
+  padding: 0px 10px;
+  justify-content: space-between;
+}
+
+.main-header {
+  font-weight: 500;
+  background-color: #404040;
+  color: #ffffff;
+
+}
+
+/* Mobile Device */
+@media (min-width: 480px) {
+  .main{
+    width: 85vw;
+  }
+  .main-header {
+    font-size: 1rem;
+  }
+
+  .main-header > div {
+    justify-content: flex-start;
+  }
+
+  .main-header > div :last-child {
+    padding-left: 5px;
+  }
+}
+
+/* iPad Device */
+@media (min-width: 768px) {
+  .main{
+    width: 75vw;
+  }
+}
+
+/* Laptop Device */
+@media (min-width: 1024px) {
+  .main{
+    width: 60vw;
+  }
+}

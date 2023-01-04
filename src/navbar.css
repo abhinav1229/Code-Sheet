@@ -1,0 +1,48 @@
+nav{
+  width: 65vw;
+  margin: auto;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  transition: all 150ms linear;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all 150ms linear;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4caf50;
+}
+
+.book-name {
+  position: relative;
+  left: 25%;
+  font-weight: 600;
+}
+
+.book-name a:hover {
+  background-color: coral;
+}
