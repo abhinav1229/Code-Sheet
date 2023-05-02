@@ -8,7 +8,7 @@ const Chapter = () => {
 
   const callAPI = async () => {
     let data = await fetch(
-      "https://raw.githubusercontent.com/abhinav1229/byte-flip-code-series/main/problems.json"
+      "https://api.npoint.io/05b62d932bff5c40cadb"
     );
     data = await data.json();
     setQuestion(data);
